@@ -5,7 +5,7 @@
  */
 package examenfinal;
 
-import javax.swing.JLabel;
+
 
 
 /**
@@ -31,16 +31,19 @@ public class Examen extends javax.swing.JFrame {
             int xl=6;
             int yl=6;
                 
+                
             @Override
             public void run() {
                 try{
+                    
                     while (true) {  
                         Thread.sleep(250);
                          
                         if(xl<=290 && yl==6){
                             xl=xl+1;
-                            jLabel1.repaint();
+                            
                             jLabel1.setLocation(xl, yl);
+                            jLabel1.repaint();
                             jLabel1.setText("Cordenadas en X: "+ xl + ", Y: "+yl);
                         }
                         if(xl==290 && yl<=174){
